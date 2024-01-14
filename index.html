@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>TO do list</h1>
+
+      <div class="content">
+        <ul></ul>
+        <div class="inputs">
+          <h3>Add new to do</h3>
+          <div>
+            <label for="title" style="width: 15%">Task title: </label>
+            <input type="text" name="title" id="title" style="width: 78%" />
+          </div>
+          <div>
+            <label for="hours" style="width: 15%">Hours (hh): </label>
+            <input type="number" name="hours" id="hours" style="width: 30%" />
+            <label for="mins" style="width: 15%">Mins (mm): </label>
+            <input type="number" name="mins" id="mins" style="width: 30%" />
+          </div>
+          <div>
+            <label for="day" style="width: 30%">Day:</label>
+            <label for="month" style="width: 30%">Month:</label>
+            <label for="year" style="width: 30%">Year:</label>
+          </div>
+          <div>
+            <select name="day" id="day" style="width: 28%"></select
+            ><select name="month" id="month" style="width: 28%"></select
+            ><select name="year" id="year" style="width: 28%"></select>
+          </div>
+          <button id="add">Add Task</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/idb.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
